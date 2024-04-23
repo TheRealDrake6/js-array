@@ -1,0 +1,3 @@
+
+let $assignedPair = [];
+let $currentImg = "";

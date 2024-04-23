@@ -1,0 +1,207 @@
+
+.main-title {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    & > h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.title-text {
+    width: 300px;
+    @media screen and (min-width: $mb-med) {
+        width: 500px;
+    }
+    @media screen and (min-width: $mb-lg) {
+        width: 700px;
+    }
+    & > h3 {
+        text-align: center;
+    }
+}
+
+.fetch-button-ref {
+    @include base-btn(140px, 28px);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.primary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mb-section-main {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $mb-med) {
+        flex-direction: row;
+    }
+}
+
+.mb-section {
+    @media screen and (min-width: $mb-med) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+}
+
+.fetcher-container, .email-input-container, .select-email-container {
+    width: 300px;
+}
+
+.fetcher-container {
+    @media screen and (min-width: $mb-med) {
+        margin-right: 15px;
+    }
+}
+
+.base-box {
+    margin-top: 30px;
+    text-align: center;
+    border: solid $dark-bg 1px;
+    border-radius: 4px;
+    background-color: $dark-bg;
+}
+
+.lightbox {
+    background-color: $lightest-bg;
+    border-color: $lightest-bg;
+}
+
+.box-sizer, .assigned-sizer {
+    width: 300px;
+}
+
+.assigned-sizer {
+    @media screen and (min-width: $mb-med) {
+        width: 632px;
+    }
+}
+
+.image-container {
+    height: 252px;
+    width: 252px;
+    border: solid $accent-bg 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fetch-button {
+    @include base-btn();
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.email-textbox {
+    @include inputFields();
+}
+
+.select-email {
+    @include inputFields();
+}
+
+.light-inputs {
+    border-color: $lighter-bg;
+    &:focus {
+        border-color: $accent-bg;
+        box-shadow: 0 0 5px $accent-bg;
+    }
+}
+
+.assigned-image-box {
+    
+    @media screen and (min-width: $mb-med) {
+        width: 630px;
+        flex-direction: row;
+    }
+}
+
+.assigned-image-box > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: $mb-med) {
+        flex-direction: row;
+    }
+}
+
+li {
+    margin: 10px 14px;
+}
+
+// ********* FOCUS & ERROR GLOWS ********* //
+
+.focus-glow {
+    box-shadow: 0 0 20px $accent-font;
+}
+
+.focus-glow-light {
+    box-shadow: 0 0 20px $black;
+}
+
+.img-fetcher-box, .email-input-box, .email-select-box {
+    transition: box-shadow 1s ease;
+}
+
+.email-error-glow {
+    border: solid #ff0000 1px;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.error-msg-input, .error-msg-select {
+    position: absolute;
+    content: "";
+    font-size: 0.9rem;
+    text-align: center;
+    color: #ff5858;
+    font-weight: bold;
+    width: 299px;
+}
+
+.light-error {
+    border-color: #ff5858;
+    box-shadow: 0 0 10px #ff5858;
+}
+
+// ********* LIGHT/DARK MODE BUTTON & FUNCTIONALITY ********* //
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle-btn {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: $accent-font;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: solid $accent-font 1px;
+    margin: 50px 10px 0 0;
+    height: 30px;
+    width: 30px;
+}
+
+.btnon {
+    color: $accent-font;
+    background-color: $base-bg;
+    border-color: $base-bg;
+}

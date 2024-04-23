@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    background-color: $base-bg;
+    color: $base-font;
+    transition: background-color 0.2s ease;
+}
+
+.lightmode {
+    color: $base-bg;
+    background-color: $accent-font;
+    transition: background-color 0.2s ease;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+a {
+    color: $base-font;
+    text-decoration: none;
+    &:hover {
+        color: $accent-font;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
