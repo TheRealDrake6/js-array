@@ -13,13 +13,30 @@
         <div class="title-container">
            <div class="title-text">
               <h1 class="main-title">Assigning Images to Emails</h1>
-              <h3>Using the <a href="#imagefetcher" class="fetch-button-ref find-img-ref">Find Image</a> button find a random image .</h3>
-              <h3>Enter your email address into the input field and use the <a href="#enteremail" class="fetch-button-ref add-email-ref">Add Email</a> button.</h3>
-              <h3>More images are able to be assigned to your email address by using the <a href="#emailselect" class="fetch-button-ref assign-img-ref">Assign Image</a> button.</h3>
            </div>
         </div>
         <div class="primary-container">
            <div class="mb-section-main">
+            <div class="mb-section">
+               <div class="email-input-container">
+                  <div class="email-input-box base-box box-sizer">
+                     <h2 class="enteremail">Enter Email Address</h2>
+                     <input type="email" id="email-input" class="email-textbox input-error-glow" placeholder="Email Address">
+                     <div class="error-msg-input"></div>
+                     <button id="email-btn" class="fetch-button">Add Email</button>
+                  </div>
+               </div>
+               <div class="select-email-container">
+                  <div class="email-select-box base-box box-sizer">
+                     <h2 class="selectemail">Select Email Address</h2>
+                     <select id="select-email" class="select-email select-error-glow">
+                        <option>Select an Email Address</option>
+                     </select>
+                     <div class="error-msg-select"></div>
+                     <button id="select-btn" class="fetch-button">Assign Image</button>
+                  </div>
+               </div>
+            </div>
               <div class="fetcher-container">
                  <div class="img-fetcher-box base-box box-sizer">
                     <h2 class="imagefetcher">Image Selector</h2>
@@ -29,26 +46,7 @@
                     <button id="fetcher-btn" class="fetch-button find-img-btn">Find New Image</button>
                  </div>
               </div>
-              <div class="mb-section">
-                 <div class="email-input-container">
-                    <div class="email-input-box base-box box-sizer">
-                       <h2 class="enteremail">Enter Email Address</h2>
-                       <input type="email" id="email-input" class="email-textbox input-error-glow" placeholder="Email Address">
-                       <div class="error-msg-input"></div>
-                       <button id="email-btn" class="fetch-button">Add Email</button>
-                    </div>
-                 </div>
-                 <div class="select-email-container">
-                    <div class="email-select-box base-box box-sizer">
-                       <h2 class="selectemail">Select Email Address</h2>
-                       <select id="select-email" class="select-email select-error-glow">
-                          <option>Select an Email Address</option>
-                       </select>
-                       <div class="error-msg-select"></div>
-                       <button id="select-btn" class="fetch-button">Assign Image</button>
-                    </div>
-                 </div>
-              </div>
+              
            </div>
            <div class="base-box assigned-sizer">
               <h2>Images Assigned</h2>
@@ -64,6 +62,5 @@
      <script src="js/myjs/imgassigner.js"></script>
      <script src="js/myjs/emailinput.js"></script>
      <script src="js/myjs/emailselect.js"></script>
-     <script src="js/myjs/titlebuttons.js"></script>
   </body>
 </html>
