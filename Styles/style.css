@@ -5,14 +5,8 @@ html {
 body {
   font-family: "Manrope", sans-serif;
   margin: 0;
-  background-color: #333;
+  background-color: #356141;
   color: #ddd;
-  transition: background-color 0.2s ease;
-}
-
-.lightmode {
-  color: #333;
-  background-color: #fff;
   transition: background-color 0.2s ease;
 }
 
@@ -98,6 +92,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #222;
 }
 
 .mb-section-main {
@@ -134,11 +129,6 @@ ul {
   border: solid #222 1px;
   border-radius: 4px;
   background-color: #222;
-}
-
-.lightbox {
-  background-color: #bbb;
-  border-color: #bbb;
 }
 
 .box-sizer, .assigned-sizer {
@@ -205,14 +195,6 @@ ul {
   outline: none;
   border: solid #ddd 1px;
   box-shadow: 0 0 5px #ddd;
-}
-
-.light-inputs {
-  border-color: #777;
-}
-.light-inputs:focus {
-  border-color: #555;
-  box-shadow: 0 0 5px #555;
 }
 
 @media screen and (min-width: 768px) {
@@ -294,8 +276,8 @@ li {
 
 .btnon {
   color: #fff;
-  background-color: #333;
-  border-color: #333;
+  background-color: #356141;
+  border-color: #356141;
 }
 
 /*# sourceMappingURL=style.css.map */

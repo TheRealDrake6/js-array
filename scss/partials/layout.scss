@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $dark-bg;
 }
 
 .mb-section-main {
@@ -75,11 +76,6 @@
     background-color: $dark-bg;
 }
 
-.lightbox {
-    background-color: $lightest-bg;
-    border-color: $lightest-bg;
-}
-
 .box-sizer, .assigned-sizer {
     width: 300px;
 }
@@ -112,14 +108,6 @@
     @include inputFields();
 }
 
-.light-inputs {
-    border-color: $lighter-bg;
-    &:focus {
-        border-color: $accent-bg;
-        box-shadow: 0 0 5px $accent-bg;
-    }
-}
-
 .assigned-image-box {
     
     @media screen and (min-width: $mb-med) {
@@ -141,8 +129,6 @@
 li {
     margin: 10px 14px;
 }
-
-// ********* FOCUS & ERROR GLOWS ********* //
 
 .focus-glow {
     box-shadow: 0 0 20px $accent-font;
@@ -175,8 +161,6 @@ li {
     border-color: #ff5858;
     box-shadow: 0 0 10px #ff5858;
 }
-
-// ********* LIGHT/DARK MODE BUTTON & FUNCTIONALITY ********* //
 
 .container {
     display: flex;

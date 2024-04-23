@@ -56,8 +56,6 @@ $(".select-error-glow").on("click", function(){
 });
 
 
-// This will hide elements depending on which email address is currently selected
-
 $("#select-email").on("change", function(){
     var $selectedEmail = $("#select-email").val();
     $(".assigned-image-box ul").not(`.img-storage-${$selectedEmail.replace(/[@.]/g, "")}`).hide();
